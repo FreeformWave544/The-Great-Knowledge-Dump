@@ -1,0 +1,16 @@
+body {
+    color: #575757;
+    font: 14px/21px Arial, Helvetica, sans-serif;
+    background-color: #2f3b4b;
+    background: -moz-radial-gradient(center 45deg, circle closest-corner, #342f4b 0%, #42034b 100%);
+    background: -webkit-gradient(radial, center center, 10, center center, 900, from(#342f4b), to(#43034b93));
+}
+a {
+    color: bisque;
+    text-decoration: underline 0.15em rgba(255, 255, 255, 0);
+    transition: text-decoration-color 300ms;
+}
+a:hover {
+    color: aquamarine;
+    text-decoration-color: rgba(255, 255, 255, 1);
+}
