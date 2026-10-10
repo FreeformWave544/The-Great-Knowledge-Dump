@@ -27,3 +27,19 @@ span {
 ::-webkit-scrollbar-track { background-color: #2f3b4b; }
 ::-webkit-scrollbar-thumb { background-color: #42034b; }
 ::-webkit-scrollbar-thumb:hover { background-color: #af0ac5; }
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #3f1010;
+}
