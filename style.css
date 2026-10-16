@@ -43,3 +43,9 @@ td, th {
 tr:nth-child(even) {
   background-color: #3f1010;
 }
+
+div.infoBox {
+    display: flex; flex-direction: column; gap: 8px; align-items: center; background-color: rgba(0, 0, 0, 0.2); border-radius: 50px;
+    padding: 30px; width: 600px; margin: 0 auto; padding-bottom: 50px; padding-top: 0px;
+    box-shadow: 10px 10px rgb(36, 20, 20), 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); font-size: 30px;
+}
