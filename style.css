@@ -15,6 +15,22 @@ a.alt {
     text-decoration: underline 0.15em rgba(1, 180, 80, 0.67);
     transition: text-decoration-color 300ms;
 }
+.homeButtons {
+    transition: transform 0.3s ease, background 0.3s ease;
+    --hover: #ec374f3d;
+}
+.subjects:has(.homeButtons:hover) .homeButtons:not(:hover) {
+    perspective: 500px;
+    transform: rotateY(90deg) rotateX(90deg);
+}
+.homeButtons:hover div {
+    transform: scale(1.2);
+    transition: transform 0.5s ease;
+    animation: pulse 0.7s;
+}
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 var(--hover); }
+    100% { box-shadow: 0 0 0 2em transparent; } }
 a:hover {
     color: aquamarine;
     text-decoration-color: rgba(135, 206, 235, 1);
@@ -23,6 +39,7 @@ span {
     color: rgb(107, 255, 255);
     font-size: 25px;
 }
+
 ::-webkit-scrollbar { width: 7px; }
 ::-webkit-scrollbar-track { background-color: #2f3b4b; }
 ::-webkit-scrollbar-thumb { background-color: #42034b; }
