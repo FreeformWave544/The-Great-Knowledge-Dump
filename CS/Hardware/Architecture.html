@@ -48,22 +48,38 @@
         <b class="keyword">The cache</b> is very fast memory, very close to the CPU, used to hold temporary instructions or data for quick access.
         This type of memory is volatile, meaning it is non-permanent, and gets cleared when the computer shuts down.
     </div><br />
-    <div style="white-space: pre-line; background-color: black; border-radius: 15px; padding: 15px; font-size: 20px;"><b><span>FDE Cycle</span></b>
+    <div id="FDE" style="white-space: pre-line; background-color: black; border-radius: 15px; padding: 15px; font-size: 20px;"><b><span>FDE Cycle</span></b>
         The Fetch-Decode-Execute cycle (FDE cycle) does what its name says.
         
         The CPU fetches an instruction from main memory, decodes the instruction, then executes the instruction.
         The amount of times this cycle executes per second is measured in Hertz (Hz).
 
-        And if we dive deeper into the CPU, we find out that it contains the Control Unit (CU) and Arithmetic Logic Unit (ALU), as well as some registers.
+        And if we dive deeper into the CPU, we find out that it contains the <a href="#CU">Control Unit (CU)</a> and <a href="#ALU">Arithmetic Logic Unit (ALU)</a>, as well as some <a href="#reg">registers</a>.
     </div><br />
-    <div style="white-space: pre-line; background-color: black; border-radius: 15px; padding: 15px; font-size: 20px;"><b><span>Control Unit</span></b>
-        
+    <div id="CU" style="white-space: pre-line; background-color: black; border-radius: 15px; padding: 15px; font-size: 20px;"><b><span>Control Unit</span></b>
+        This coordinates all of the activities taking place inside of the CPU, with its functions summarised:
+        <ul><li>Controls the execution of instructions in the <b>correct sequence</b>.</li>
+        <li>It decodes instructions (part of the <a href="#FDE">FDE cycle</a>).</li>
+        <li>Regulates and controls processor timing using regular pulses from the system clock.</li>
+        <li>Sends & receives control signals to and from other devices within the computer.</li></ul>
     </div><br />
-    <div style="white-space: pre-line; background-color: black; border-radius: 15px; padding: 15px; font-size: 20px;"><b><span>Arithmetic Logic Unit</span></b>
-        
+    <div id="ALU" style="white-space: pre-line; background-color: black; border-radius: 15px; padding: 15px; font-size: 20px;"><b><span>Arithmetic Logic Unit</span></b>
+        The Arithmetic Logic Unit has 3 main functions:
+        <ul><li>Logical Operations</li>
+        <ul><li>These include `AND`, `OR`, and `NOT`</li></ul>
+        <li>Shift Operations</li>
+        <ul><li>The bits in a computer word can be shifted left/right a certain number of places. The ALU handles this.</li></ul>
+        <li>Arithmetic Operations</li>
+        <ul><li>These include addition, subtraction, multiplication, and division.</li></ul></ul>
     </div><br />
-    <div style="white-space: pre-line; background-color: black; border-radius: 15px; padding: 15px; font-size: 20px;"><b><span>Special-Purpose Registers</span></b>
-        
+    <div id="reg" style="white-space: pre-line; background-color: black; border-radius: 15px; padding: 15px; font-size: 20px;"><b><span>Special-Purpose Registers</span></b>
+        A register in and of itself is defined as a special, VERY fast memory location contained within the CPU, typically executing instructions.
+        The CPU has a number of these registers that are for a special-purpose.
+        These are:
+        <ul><li>Memory Address Register (MAR)<ul><li>Hold the <i>address</i> of the instruction/data to be fetched/stored.</li></ul></li>
+        <li>Memory Data Register (MDR)<ul><li>Holds the data/program instruction <i>temporarily</i> when it is fetched from/sent to memory.</li></ul></li>
+        <li>Program Counter (PC)<ul><li>Holds the memory address of the <i>next</i> instruction to be processed.</li></ul></li>
+        <li>Accumulator (ACC)<ul><li>Results of operations carried out in the ALU are temporarily stored in this special-purpose memory location.</li></ul></li></ul>
     </div><br />
     <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
     <div style="display: flex; flex-direction: column; margin: auto; background-color: brown; padding: 20px; text-align: center; border-radius: 20px; width: 300px; box-shadow: 50px 50px rgba(40, 1, 1, 0.7);">
